@@ -22,29 +22,42 @@
         <label for="email">Email Address</label><br>
         <input type="email" id="email" name="email" value=""><br>
         <label for="phone">Phone Number</label><br>
-        <input type="text" id="phone" name="phone" value=""><br>
+        <input type="tel" id="phone" name="phone" value=""><br>
         <label for="address">Street Address</label><br>
         <input type="text" id="address" name="address" value=""><br>
         <label for="city">City</label><br>
         <input type="text" id="city" name="city" value=""><br>
         <label for="state">State</label><br>
-        <input type="text" id="state" name="state" value=""><br>
+        <!-- <input type="text" id="state" name="state" value=""><br> -->
+        <select name="states" id="states">
+          <option value="AS">AS</option>
+          <option value="AS">NY</option>
+          <option value="AS">WA</option>
+        </select><br>
         <label for="zipcode">Zip Code</label><br>
         <input type="number" id="zipcode" name="zipcode" value=""><br>
       </fieldset>
 
       <fieldset>
         <legend>Newsletter</legend>
-        <p>Select the newsletters you would like to receive</p>
-        <input type="checkbox" id="htmlnews" name="htmlnews" value="news-category">
+        <label>Select the newsletters you would like to receive</label><br/>
+        <input type="checkbox" id="htmlnews" name="htmlnews" value="news_category">
         <label for="htmlnews"> HTML News</label><br>
-        <input type="checkbox" id="cssnews" name="cssnews" value="news-category">
+        <input type="checkbox" id="cssnews" name="cssnews" value="news_category">
         <label for="cssnews"> CSS News</label><br>
-        <input type="checkbox" id="jsnews" name="jsnews" value="news-category">
+        <input type="checkbox" id="jsnews" name="jsnews" value="news_category">
         <label for="jsnews"> Javascript News</label><br>
+        <label>Select the newsletters you would like to receive</label><br>
+        <input type="radio" id="html" name="news_format" value="html">
+        <label for="html"> HTML</label><br>
+        <input type="radio" id="plain_text" name="news_format" value="plain_text">
+        <label for="html"> Plain text</label><br>
+        <label>Other topics you'd like to hear about</label><br>
+        <textarea name="other" id="other" cols="30" rows="4"></textarea>
       </fieldset>
+      <input type="submit" value="Sign Up">
     </form>
-
   </main>
+  <footer>Copyright The Code Review</footer>
 </body>
 </html>
